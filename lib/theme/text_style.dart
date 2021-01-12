@@ -67,8 +67,24 @@ final TextStyle heading5BoldDarkEnStyle = TextStyle(
   fontWeight: FontWeight.w700,
 );
 
-//* Lead Paragraph
-//Lead Paragraph
+//* Paragraph
+// Extra Large Paragraph
+final TextStyle extraLargeParagraphRegularLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 58,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
+);
+
+// small Paragraph
+final TextStyle smallParagraphRegularLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 18,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
+);
+
+// Lead Paragraph
 final TextStyle leadParagraphRegularDarkEnStyle = TextStyle(
   color: darkText,
   fontSize: 22,
@@ -77,7 +93,7 @@ final TextStyle leadParagraphRegularDarkEnStyle = TextStyle(
 );
 
 //* Body
-//Body Large
+// Body Large
 final TextStyle bodyLargeRegularDarkEnStyle = TextStyle(
   color: darkText,
   fontSize: 20,
@@ -85,7 +101,14 @@ final TextStyle bodyLargeRegularDarkEnStyle = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
-//Body Medium
+final TextStyle bodyLargeRegularLightEnStyle = TextStyle(
+  color: light1Color,
+  fontSize: 20,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+);
+
+// Body Medium
 final TextStyle bodyMediumRegularDarkEnStyle = TextStyle(
   color: darkText,
   fontSize: 18,
@@ -100,7 +123,7 @@ final TextStyle bodyMediumRegularLightEnStyle = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
-//Body Normal
+// Body Normal
 final TextStyle bodyNormalRegularDarkEnStyle = TextStyle(
   color: darkText,
   fontSize: 16,
@@ -115,7 +138,7 @@ final TextStyle bodyNormalRegularLightEnStyle = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
-//Body small
+// Body small
 final TextStyle bodySmallRegularDarkEnStyle = TextStyle(
   color: darkText,
   fontSize: 14,

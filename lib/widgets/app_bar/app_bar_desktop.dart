@@ -8,7 +8,7 @@ class AppBarDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 50,
-      padding: const EdgeInsets.only(top: 15),
+      padding: const EdgeInsets.only(top: 15, left: 160, right: 160),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
