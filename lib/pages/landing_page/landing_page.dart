@@ -21,20 +21,20 @@ class LandingPage extends StatelessWidget {
               alignment: Alignment.center,
             ),
           ),
-          // TODO: CenteredWidget
           child: Column(
             children: <Widget>[
-              //* Appbar
-              AppBarWidget(),
-              //* Body
               Expanded(
-                child: SingleChildScrollView(
-                  child: ScreenTypeLayout(
+                  child: ListView(
+                children: <Widget>[
+                  //* Appbar
+                  AppBarWidget(),
+                  //* Body
+                  ScreenTypeLayout(
                     desktop: LandingPageContentDesktop(),
                     mobile: Container(color: darkerColor),
                   ),
-                ),
-              ),
+                ],
+              )),
             ],
           ),
         ),
