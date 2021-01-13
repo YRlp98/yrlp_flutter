@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'landing_page_quick_intro.dart';
+
+import '../../theme/colors.dart';
+import 'about_me/about_me_desktop.dart';
+import 'quick_intro/quick_intro_desktop.dart';
 
 class LandingPageContentDesktop extends StatelessWidget {
   @override
@@ -7,10 +10,20 @@ class LandingPageContentDesktop extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(top: 300),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          //* Quick intro
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 160),
-            child: LandingPageQuickIntro(),
+            margin: const EdgeInsets.symmetric(horizontal: 160),
+            child: QuickIntroDesktop(),
+          ),
+          SizedBox(height: 120),
+          //* About me
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 320, vertical: 120),
+            width: MediaQuery.of(context).size.width, // To fit the width
+            color: dark1Color,
+            child: AboutMeDesktop(),
           ),
         ],
       ),

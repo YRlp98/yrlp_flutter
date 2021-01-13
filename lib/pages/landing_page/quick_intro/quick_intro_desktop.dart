@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import '../../theme/colors.dart';
-import '../../theme/strings.dart';
-import '../../theme/text_style.dart';
 
-class LandingPageQuickIntro extends StatelessWidget {
-  const LandingPageQuickIntro({
+import '../../../theme/colors.dart';
+import '../../../theme/strings.dart';
+import '../../../theme/text_style.dart';
+
+class QuickIntroDesktop extends StatelessWidget {
+  const QuickIntroDesktop({
     Key key,
   }) : super(key: key);
 
@@ -16,7 +17,7 @@ class LandingPageQuickIntro extends StatelessWidget {
         //* Large Text
         SelectableText(
           imYousef,
-          style: extraLargeParagraphRegularLightEnStyle,
+          style: extraLargeParagraphBoldLightEnStyle,
         ),
         //* Medium Texts
         Row(

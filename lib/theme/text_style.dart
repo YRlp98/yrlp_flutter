@@ -68,20 +68,46 @@ final TextStyle heading5BoldDarkEnStyle = TextStyle(
 );
 
 //* Paragraph
+// Ultra Large Paragraph
+final TextStyle ultraLargeParagraphBoldGreenEnStyle = TextStyle(
+  color: mainColor,
+  fontSize: 88,
+  height: 1.05,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
+);
+
 // Extra Large Paragraph
-final TextStyle extraLargeParagraphRegularLightEnStyle = TextStyle(
+final TextStyle extraLargeParagraphBoldLightEnStyle = TextStyle(
   color: lightText,
   fontSize: 58,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w700,
 );
 
-// small Paragraph
-final TextStyle smallParagraphRegularLightEnStyle = TextStyle(
+// Large Paragraph
+final TextStyle largeParagraphRegularLightEnStyle = TextStyle(
   color: lightText,
-  fontSize: 18,
+  fontSize: 38,
   fontFamily: 'Poppins',
-  fontWeight: FontWeight.w700,
+  fontWeight: FontWeight.w400,
+);
+
+// Large Paragraph 2
+final TextStyle largeParagraph2RegularLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 30,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+);
+
+// Half Large Paragraph
+final TextStyle halfLargeParagraphRegularLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 26,
+  height: 1.05,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
 );
 
 // Lead Paragraph
@@ -90,6 +116,14 @@ final TextStyle leadParagraphRegularDarkEnStyle = TextStyle(
   fontSize: 22,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w400,
+);
+
+// small Paragraph
+final TextStyle smallParagraphRegularLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 18,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
 );
 
 //* Body
@@ -103,6 +137,13 @@ final TextStyle bodyLargeRegularDarkEnStyle = TextStyle(
 
 final TextStyle bodyLargeRegularLightEnStyle = TextStyle(
   color: light1Color,
+  fontSize: 20,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+);
+
+final TextStyle bodyLargeRegularGreenEnStyle = TextStyle(
+  color: mainColor,
   fontSize: 20,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w400,

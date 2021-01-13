@@ -32,7 +32,7 @@ class AppBarDesktop extends StatelessWidget {
               SizedBox(width: 40),
               // Contact me
               AppBarItems(
-                title: contact_me,
+                title: contactMe,
                 onTap: () {},
               ),
             ],
