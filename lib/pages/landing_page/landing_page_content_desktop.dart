@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../theme/colors.dart';
 import 'about_me/about_me_desktop.dart';
 import 'quick_intro/quick_intro_desktop.dart';
+import 'skills/skills_desktop.dart';
 
 class LandingPageContentDesktop extends StatelessWidget {
   @override
@@ -24,6 +25,13 @@ class LandingPageContentDesktop extends StatelessWidget {
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
             child: AboutMeDesktop(),
+          ),
+          //* Skills
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 320, vertical: 120),
+            width: MediaQuery.of(context).size.width, // To fit the width
+            color: dark1Color,
+            child: SkillsDesktop(),
           ),
         ],
       ),

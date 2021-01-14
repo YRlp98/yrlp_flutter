@@ -19,7 +19,7 @@ class MoreThanWidget extends StatelessWidget {
       children: <Widget>[
         SelectableText(
           moreThan,
-          style: largeParagraph2RegularLightEnStyle,
+          style: largeParagraph3RegularLightEnStyle,
         ),
         Row(
           children: <Widget>[

@@ -26,6 +26,14 @@ final TextStyle display2LightDarkEnStyle = TextStyle(
   fontWeight: FontWeight.w300,
 );
 
+// Display 3
+final TextStyle display3LightLightEnStyle = TextStyle(
+  color: light1Color,
+  fontSize: 16,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w300,
+);
+
 //* Heading
 // Heading 1
 final TextStyle heading1BoldDarkEnStyle = TextStyle(
@@ -96,6 +104,14 @@ final TextStyle largeParagraphRegularLightEnStyle = TextStyle(
 // Large Paragraph 2
 final TextStyle largeParagraph2RegularLightEnStyle = TextStyle(
   color: lightText,
+  fontSize: 36,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+);
+
+// Large Paragraph 3
+final TextStyle largeParagraph3RegularLightEnStyle = TextStyle(
+  color: lightText,
   fontSize: 30,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w400,
@@ -113,6 +129,13 @@ final TextStyle halfLargeParagraphRegularLightEnStyle = TextStyle(
 // Lead Paragraph
 final TextStyle leadParagraphRegularDarkEnStyle = TextStyle(
   color: darkText,
+  fontSize: 22,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+);
+
+final TextStyle leadParagraphRegularLightEnStyle = TextStyle(
+  color: lightText,
   fontSize: 22,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w400,
@@ -182,6 +205,13 @@ final TextStyle bodyNormalRegularLightEnStyle = TextStyle(
 // Body small
 final TextStyle bodySmallRegularDarkEnStyle = TextStyle(
   color: darkText,
+  fontSize: 14,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+);
+
+final TextStyle bodySmallRegularLightEnStyle = TextStyle(
+  color: lightText,
   fontSize: 14,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w400,

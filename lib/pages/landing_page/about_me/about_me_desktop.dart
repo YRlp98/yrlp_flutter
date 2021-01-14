@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../theme/colors.dart';
 import '../../../theme/strings.dart';
 import '../../../theme/text_style.dart';
@@ -44,13 +45,13 @@ class AboutMeDesktop extends StatelessWidget {
         //* Experience
         MoreThanWidget(
           number: '6',
-          text: yearsOfExperience,
+          text: yearsOfExperienceMultiline,
         ),
 
         //* Satisfied Clients
         MoreThanWidget(
           number: '30',
-          text: satisfiedClients,
+          text: satisfiedClientsMultiline,
         ),
       ],
     );

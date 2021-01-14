@@ -4,6 +4,7 @@ const home = 'home';
 const blog = 'Blog';
 const contactMe = 'Contact me';
 const aboutMe = 'ABOUT ME.';
+const projects = 'Projects';
 
 //* Sentences
 const imYousef = "I'm Yousef Roshandel";
@@ -12,6 +13,10 @@ const andUIUXDesigner = "and UI/UX Designer";
 const scrollDown = "SCROLL DOWN";
 const readMore = "Read More";
 const moreThan = "More than";
+const yearsOfExperience = "Years of Experience";
+const skillsLine1 = "Dart - Git - Agile - Linux";
+const skillsLine2 = "SQL - Android - Java - XML";
+const skillsLine3 = "C# - HTML/CSS";
 
 //* multiline
 const aboutMeDescription =
@@ -23,8 +28,8 @@ and web platforms. Passionate about programming and technology. In
 constant pursuit of improving myself and my skills through learning new
 things.""";
 
-const yearsOfExperience = """Years of
+const yearsOfExperienceMultiline = """Years of
 Experience""";
 
-const satisfiedClients = """Satisfied
+const satisfiedClientsMultiline = """Satisfied
 Clients""";
