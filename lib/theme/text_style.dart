@@ -27,7 +27,23 @@ final TextStyle display2LightDarkEnStyle = TextStyle(
 );
 
 // Display 3
+final TextStyle display3LightDarkEnStyle = TextStyle(
+  color: darkText,
+  fontSize: 36,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w300,
+);
+
 final TextStyle display3LightLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 36,
+  height: 1.05,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w300,
+);
+
+// Display 4
+final TextStyle display4LightLightEnStyle = TextStyle(
   color: light1Color,
   fontSize: 16,
   fontFamily: 'Poppins',
@@ -46,6 +62,13 @@ final TextStyle heading1BoldDarkEnStyle = TextStyle(
 // Heading 2
 final TextStyle heading2BoldDarkEnStyle = TextStyle(
   color: darkText,
+  fontSize: 36,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
+);
+
+final TextStyle heading2BoldLightEnStyle = TextStyle(
+  color: lightText,
   fontSize: 36,
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w700,
@@ -146,7 +169,15 @@ final TextStyle smallParagraphRegularLightEnStyle = TextStyle(
   color: lightText,
   fontSize: 18,
   fontFamily: 'Poppins',
-  fontWeight: FontWeight.w700,
+  fontWeight: FontWeight.w400,
+);
+
+// mini Paragraph
+final TextStyle miniParagraphRegularLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 16,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
 );
 
 //* Body

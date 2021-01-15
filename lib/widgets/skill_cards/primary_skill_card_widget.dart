@@ -67,13 +67,13 @@ class PrimarySkillCardWidget extends StatelessWidget {
                   // Expreince
                   SelectableText(
                     yearsOfexperience + ' ' + yearsOfExperience,
-                    style: display3LightLightEnStyle,
+                    style: display4LightLightEnStyle,
                   ),
                   SizedBox(height: 2),
                   // Projects
                   SelectableText(
                     numberOfProjects + ' ' + projects,
-                    style: display3LightLightEnStyle,
+                    style: display4LightLightEnStyle,
                   ),
                 ],
               ),

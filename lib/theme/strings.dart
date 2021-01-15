@@ -5,6 +5,11 @@ const blog = 'Blog';
 const contactMe = 'Contact me';
 const aboutMe = 'ABOUT ME.';
 const projects = 'Projects';
+const myProjects = 'MY PROJECTS';
+const android = 'Android';
+const iOS = 'iOS';
+const windows = 'Windows';
+const allProjects = 'All Projects';
 
 //* Sentences
 const imYousef = "I'm Yousef Roshandel";
@@ -33,3 +38,6 @@ Experience""";
 
 const satisfiedClientsMultiline = """Satisfied
 Clients""";
+
+//* Project name
+const foxholeArtillery = "Foxhole artillery";

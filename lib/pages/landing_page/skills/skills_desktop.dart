@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../../../theme/icons.dart';
 import '../../../theme/strings.dart';
-import '../../../widgets/cards/primary_skill_card_widget.dart';
-import '../../../widgets/cards/secondary_skill_card_widget.dart';
+import '../../../widgets/skill_cards/primary_skill_card_widget.dart';
+import '../../../widgets/skill_cards/secondary_skill_card_widget.dart';
 
 class SkillsDesktop extends StatelessWidget {
   @override

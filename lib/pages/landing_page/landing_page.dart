@@ -31,7 +31,7 @@ class LandingPage extends StatelessWidget {
                   //* Body
                   ScreenTypeLayout(
                     desktop: LandingPageContentDesktop(),
-                    mobile: Container(color: darkerColor),
+                    mobile: LandingPageContentDesktop(),
                   ),
                 ],
               )),
