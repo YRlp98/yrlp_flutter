@@ -30,6 +30,7 @@ const meOnSocialMedia = "Me on Social media.";
 const yousefEmail = "Yousef.r1999@gmail.com";
 const yousefSkype = "Yousef.r98";
 const yousefDiscord = "Y.Rlp#4779";
+const copyRight = "© 2021 Yousef Roshandel. All Rights Reserved";
 
 //* multiline
 const aboutMeDescription =
