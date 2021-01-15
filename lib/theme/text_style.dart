@@ -50,6 +50,14 @@ final TextStyle display4LightLightEnStyle = TextStyle(
   fontWeight: FontWeight.w300,
 );
 
+// Display 5
+final TextStyle display5LightLightEnStyle = TextStyle(
+  color: light1Color,
+  fontSize: 14,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w300,
+);
+
 //* Heading
 // Heading 1
 final TextStyle heading1BoldDarkEnStyle = TextStyle(
@@ -163,6 +171,7 @@ final TextStyle leadParagraphRegularLightEnStyle = TextStyle(
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w400,
 );
+
 
 // small Paragraph
 final TextStyle smallParagraphRegularLightEnStyle = TextStyle(

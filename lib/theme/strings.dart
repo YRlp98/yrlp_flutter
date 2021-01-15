@@ -3,6 +3,7 @@
 const home = 'home';
 const blog = 'Blog';
 const contactMe = 'Contact me';
+const contactMeBold = 'CONTACT ME:';
 const aboutMe = 'ABOUT ME.';
 const projects = 'Projects';
 const myProjects = 'MY PROJECTS';
@@ -10,6 +11,9 @@ const android = 'Android';
 const iOS = 'iOS';
 const windows = 'Windows';
 const allProjects = 'All Projects';
+const email = 'Email';
+const skype = 'Skype';
+const discord = 'Discord';
 
 //* Sentences
 const imYousef = "I'm Yousef Roshandel";
@@ -22,6 +26,10 @@ const yearsOfExperience = "Years of Experience";
 const skillsLine1 = "Dart - Git - Agile - Linux";
 const skillsLine2 = "SQL - Android - Java - XML";
 const skillsLine3 = "C# - HTML/CSS";
+const meOnSocialMedia = "Me on Social media.";
+const yousefEmail = "Yousef.r1999@gmail.com";
+const yousefSkype = "Yousef.r98";
+const yousefDiscord = "Y.Rlp#4779";
 
 //* multiline
 const aboutMeDescription =

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../theme/colors.dart';
 import 'about_me/about_me_desktop.dart';
+import 'contact_me/contact_me_desktop_content.dart';
 import 'projects/projects_desktop.dart';
 import 'quick_intro/quick_intro_desktop.dart';
 import 'skills/skills_desktop.dart';
@@ -40,6 +41,13 @@ class LandingPageContentDesktop extends StatelessWidget {
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
             child: ProjectsDesktop(),
+          ),
+          //* Contact me
+          Container(
+            padding: const EdgeInsets.only(top: 110, bottom: 110, left: 247),
+            width: MediaQuery.of(context).size.width, // To fit the width
+            color: dark1Color,
+            child: ContactMeDesktop(),
           ),
         ],
       ),

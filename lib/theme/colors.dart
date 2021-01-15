@@ -7,6 +7,7 @@ Color ligherColor = const Color(0xff39D98A);
 
 //* Dark Colors
 Color dark1Color = const Color(0xff3A3A3C);
+Color dark2Color = const Color(0xff252525);
 
 //* Light Colors
 Color light1Color = const Color(0xffDDE5E9);

@@ -5,7 +5,7 @@ import '../../../theme/icons.dart';
 import '../../../theme/images.dart';
 import '../../../theme/strings.dart';
 import '../../../theme/text_style.dart';
-import '../../../widgets/buttons/large_button.dart';
+import '../../../widgets/buttons/large_button_widget.dart';
 import '../../../widgets/projects_cards/project_cards_big_widget.dart';
 import '../../../widgets/projects_cards/project_cards_small_widget.dart';
 
