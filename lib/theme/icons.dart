@@ -9,3 +9,4 @@ const instagramIcon = 'assets/icons/instagram-line.svg';
 const discordIcon = 'assets/icons/discord-fill.svg';
 const emailIcon = 'assets/icons/email-fill.svg';
 const skypeIcon = 'assets/icons/skype-fill.svg';
+const drawerIcon = 'assets/icons/drawer.svg';
