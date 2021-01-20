@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yrlp_flutter/pages/landing_page/about_me/about_me_mobile.dart';
+import 'package:yrlp_flutter/pages/landing_page/skills/skills_mobile.dart';
 
 import '../../theme/colors.dart';
 import '../../widgets/footer_widget.dart';
@@ -24,17 +25,17 @@ class LandingPageContentMobile extends StatelessWidget {
           SizedBox(height: 120),
           //* About me
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 120),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
             child: AboutMeMobile(),
           ),
           //* Skills
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 120),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 110),
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
-            child: SkillsDesktop(),
+            child: SkillsMobile(),
           ),
           //* Projects
           Container(
