@@ -5,7 +5,7 @@ import 'package:yrlp_flutter/pages/landing_page/skills/skills_mobile.dart';
 
 import '../../theme/colors.dart';
 import '../../widgets/footer_widget.dart';
-import 'contact_me/contact_me_desktop_content.dart';
+import 'contact_me/contact_me_desktop_mobile.dart';
 import 'quick_intro/quick_intro_mobile.dart';
 
 class LandingPageContentMobile extends StatelessWidget {
@@ -45,10 +45,10 @@ class LandingPageContentMobile extends StatelessWidget {
           ),
           //* Contact me
           Container(
-            padding: const EdgeInsets.only(top: 110, bottom: 20, left: 247),
+            padding: const EdgeInsets.symmetric(vertical: 110),
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
-            child: ContactMeDesktop(),
+            child: ContactMeMobile(),
           ),
           //* Footer
           Container(
