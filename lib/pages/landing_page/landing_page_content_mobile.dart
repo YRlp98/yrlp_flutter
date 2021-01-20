@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:yrlp_flutter/pages/landing_page/about_me/about_me_mobile.dart';
 
 import '../../theme/colors.dart';
 import '../../widgets/footer_widget.dart';
-import 'about_me/about_me_desktop.dart';
 import 'contact_me/contact_me_desktop_content.dart';
 import 'projects/projects_desktop.dart';
 import 'quick_intro/quick_intro_mobile.dart';
@@ -15,7 +15,6 @@ class LandingPageContentMobile extends StatelessWidget {
       padding: const EdgeInsets.only(top: 75),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           //* Quick intro
           Container(
@@ -25,28 +24,28 @@ class LandingPageContentMobile extends StatelessWidget {
           SizedBox(height: 120),
           //* About me
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 320, vertical: 120),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 120),
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
-            child: AboutMeDesktop(),
+            child: AboutMeMobile(),
           ),
           //* Skills
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 320, vertical: 120),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 120),
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
             child: SkillsDesktop(),
           ),
           //* Projects
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 320, vertical: 140),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 140),
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
             child: ProjectsDesktop(),
           ),
           //* Contact me
           Container(
-            padding: const EdgeInsets.only(top: 110, bottom: 110, left: 247),
+            padding: const EdgeInsets.only(top: 110, bottom: 20, left: 247),
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
             child: ContactMeDesktop(),

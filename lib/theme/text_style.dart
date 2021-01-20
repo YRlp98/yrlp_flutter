@@ -164,6 +164,14 @@ final TextStyle halfLargeParagraphRegularLightEnStyle = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
+// Leader Paragraph
+final TextStyle leaderParagraphRegularLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 42,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w400,
+);
+
 // Lead Paragraph
 final TextStyle leadParagraphRegularDarkEnStyle = TextStyle(
   color: darkText,
@@ -178,7 +186,6 @@ final TextStyle leadParagraphRegularLightEnStyle = TextStyle(
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w400,
 );
-
 
 // small Paragraph
 final TextStyle smallParagraphRegularLightEnStyle = TextStyle(
