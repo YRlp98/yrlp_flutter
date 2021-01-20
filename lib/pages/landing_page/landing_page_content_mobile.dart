@@ -5,21 +5,22 @@ import '../../widgets/footer_widget.dart';
 import 'about_me/about_me_desktop.dart';
 import 'contact_me/contact_me_desktop_content.dart';
 import 'projects/projects_desktop.dart';
-import 'quick_intro/quick_intro_desktop.dart';
+import 'quick_intro/quick_intro_mobile.dart';
 import 'skills/skills_desktop.dart';
 
 class LandingPageContentMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 300),
+      padding: const EdgeInsets.only(top: 75),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           //* Quick intro
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 160),
-            child: QuickIntroDesktop(),
+            margin: const EdgeInsets.symmetric(horizontal: 20),
+            child: QuickIntroMobile(),
           ),
           SizedBox(height: 120),
           //* About me

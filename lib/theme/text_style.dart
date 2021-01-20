@@ -90,6 +90,13 @@ final TextStyle heading3BoldDarkEnStyle = TextStyle(
   fontWeight: FontWeight.w700,
 );
 
+final TextStyle heading3BoldLightEnStyle = TextStyle(
+  color: lightText,
+  fontSize: 28,
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
+);
+
 // Heading 4
 final TextStyle heading4BoldDarkEnStyle = TextStyle(
   color: darkText,
