@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../theme/colors.dart';
-import '../../widgets/footer_widget.dart';
+import '../../widgets/footer/footer_widget_desktop.dart';
 import 'about_me/about_me_desktop.dart';
 import 'contact_me/contact_me_desktop_content.dart';
 import 'projects/projects_desktop.dart';
@@ -54,7 +54,7 @@ class LandingPageContentDesktop extends StatelessWidget {
           Container(
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
-            child: FooterWidget(),
+            child: FooterWidgetDesktop(),
           ),
         ],
       ),

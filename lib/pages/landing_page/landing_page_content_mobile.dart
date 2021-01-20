@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:yrlp_flutter/pages/landing_page/about_me/about_me_mobile.dart';
 import 'package:yrlp_flutter/pages/landing_page/projects/projects_mobile.dart';
 import 'package:yrlp_flutter/pages/landing_page/skills/skills_mobile.dart';
+import 'package:yrlp_flutter/widgets/footer/footer_widget_mobile.dart';
 
 import '../../theme/colors.dart';
-import '../../widgets/footer_widget.dart';
+import '../../widgets/footer/footer_widget_desktop.dart';
 import 'contact_me/contact_me_desktop_mobile.dart';
 import 'quick_intro/quick_intro_mobile.dart';
 
@@ -54,7 +55,7 @@ class LandingPageContentMobile extends StatelessWidget {
           Container(
             width: MediaQuery.of(context).size.width, // To fit the width
             color: dark1Color,
-            child: FooterWidget(),
+            child: FooterWidgetMobile(),
           ),
         ],
       ),

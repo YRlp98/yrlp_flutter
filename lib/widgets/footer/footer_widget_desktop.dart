@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../theme/colors.dart';
-import '../theme/strings.dart';
-import '../theme/text_style.dart';
+import '../../theme/colors.dart';
+import '../../theme/strings.dart';
+import '../../theme/text_style.dart';
 
-class FooterWidget extends StatelessWidget {
+class FooterWidgetDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
