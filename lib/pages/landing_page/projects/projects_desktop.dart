@@ -40,13 +40,20 @@ class ProjectsDesktop extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            ProjectCardsSmallWidget(image: landingPageBackground),
+            ProjectCardsSmallWidget(
+              image: quizAppCoverMin,
+              url: quizAppRepo,
+            ),
             ProjectCardsBigWidget(
               image: foxholeCover,
               title: foxholeArtillery,
               platforms: android + ', ' + iOS + ', ' + windows,
+              url: foxholeRepo,
             ),
-            ProjectCardsSmallWidget(image: xtraderCover),
+            ProjectCardsSmallWidget(
+              image: xtraderCover,
+              url: xTraderRepo,
+            ),
           ],
         ),
         SizedBox(height: 100),
@@ -58,6 +65,7 @@ class ProjectsDesktop extends StatelessWidget {
             shadowColor: mainColor,
             text: allProjects,
             icon: rightIcon,
+            url: yrlpProjects,
           ),
         ),
       ],

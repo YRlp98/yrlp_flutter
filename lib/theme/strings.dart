@@ -14,6 +14,8 @@ const allProjects = 'All Projects';
 const email = 'Email';
 const skype = 'Skype';
 const discord = 'Discord';
+const xTrader = 'XTrader';
+const quizApp = 'Quiz app';
 
 //* Sentences
 const imYousef = "I'm Yousef Roshandel";
@@ -50,3 +52,18 @@ Clients""";
 
 //* Project name
 const foxholeArtillery = "Foxhole artillery";
+
+//* URLs
+const virgooYRlp98URL = "https://virgool.io/@YRlp98";
+const mailToYousef = "mailto:yousef.r1999@gmail.com";
+const quizAppRepo = "https://github.com/YRlp98/quiz_app";
+const foxholeRepo = "https://github.com/YRlp98/FoxholeArtillery-Android";
+const xTraderRepo = "https://github.com/YRlp98/x_trader_mobile_app";
+const yrlpProjects = "https://github.com/YRlp98?tab=repositories";
+const yrlpGitHub = "https://github.com/YRlp98";
+const yrlpDribbble = "https://dribbble.com/YRlp98";
+const yrlpLinkedIn = "https://www.linkedin.com/in/yrlp98/";
+const yrlpTwitter = "https://twitter.com/YRlp98";
+const yrlpInstagram = "https://www.instagram.com/y.rlp/";
+const yrlpSkype = "https://join.skype.com/invite/pwjDWjghRuWW";
+const yrlpDiscord = "https://discord.com/users/213948450147008513";

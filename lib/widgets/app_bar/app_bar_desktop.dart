@@ -22,19 +22,18 @@ class AppBarDesktop extends StatelessWidget {
               // Home
               AppBarItems(
                 title: home,
-                onTap: () {},
               ),
               SizedBox(width: 40),
               // Blog
               AppBarItems(
                 title: blog,
-                onTap: () {},
+                url: virgooYRlp98URL,
               ),
               SizedBox(width: 40),
               // Contact me
               AppBarItems(
                 title: contactMe,
-                onTap: () {},
+                url: mailToYousef,
               ),
             ],
           ),

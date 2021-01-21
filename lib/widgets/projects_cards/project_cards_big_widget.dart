@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../theme/colors.dart';
 import '../../theme/text_style.dart';
 
 class ProjectCardsBigWidget extends StatelessWidget {
-  final String image, title, platforms;
+  final String image, title, platforms, url;
   final Function onTap;
 
   const ProjectCardsBigWidget({
@@ -13,6 +14,7 @@ class ProjectCardsBigWidget extends StatelessWidget {
     @required this.image,
     @required this.title,
     @required this.platforms,
+    this.url,
     this.onTap,
   }) : super(key: key);
 
@@ -69,8 +71,18 @@ class ProjectCardsBigWidget extends StatelessWidget {
             ),
           ),
         ),
-        onTap: onTap,
+        onTap: () {
+          _launchURL(url);
+        },
       ),
     );
+  }
+
+  _launchURL(String urlAddress) async {
+    if (await canLaunch(urlAddress)) {
+      await launch(urlAddress);
+    } else {
+      throw 'Could not launch $urlAddress';
+    }
   }
 }

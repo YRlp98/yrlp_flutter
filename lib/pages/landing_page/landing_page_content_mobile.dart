@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:yrlp_flutter/pages/landing_page/about_me/about_me_mobile.dart';
-import 'package:yrlp_flutter/pages/landing_page/projects/projects_mobile.dart';
-import 'package:yrlp_flutter/pages/landing_page/skills/skills_mobile.dart';
-import 'package:yrlp_flutter/widgets/footer/footer_widget_mobile.dart';
 
 import '../../theme/colors.dart';
-import '../../widgets/footer/footer_widget_desktop.dart';
+import '../../widgets/footer/footer_widget_mobile.dart';
+import 'about_me/about_me_mobile.dart';
 import 'contact_me/contact_me_desktop_mobile.dart';
+import 'projects/projects_mobile.dart';
 import 'quick_intro/quick_intro_mobile.dart';
+import 'skills/skills_mobile.dart';
 
 class LandingPageContentMobile extends StatelessWidget {
   @override

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../theme/text_style.dart';
 
 class LargeButton extends StatelessWidget {
   final Color buttonColor, shadowColor;
-  final String text, icon;
+  final String text, icon, url;
   final Function onTap;
 
   const LargeButton({
@@ -15,6 +16,7 @@ class LargeButton extends StatelessWidget {
     @required this.shadowColor,
     @required this.text,
     @required this.icon,
+    this.url,
     this.onTap,
   }) : super(key: key);
 
@@ -55,7 +57,18 @@ class LargeButton extends StatelessWidget {
             ],
           ),
         ),
+        onTap: () {
+          _launchURL(url);
+        },
       ),
     );
+  }
+
+  _launchURL(String urlAddress) async {
+    if (await canLaunch(urlAddress)) {
+      await launch(urlAddress);
+    } else {
+      throw 'Could not launch $urlAddress';
+    }
   }
 }

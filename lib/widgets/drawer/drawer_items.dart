@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../theme/colors.dart';
 import '../../theme/icons.dart';
 import '../../theme/text_style.dart';
 
 class DrawerItems extends StatelessWidget {
-  final String title;
-  final Function onTap;
+  final String title, url;
 
   const DrawerItems({
     Key key,
     @required this.title,
-    this.onTap,
+    this.url,
   }) : super(key: key);
 
   @override
@@ -41,8 +41,18 @@ class DrawerItems extends StatelessWidget {
             ],
           ),
         ),
-        onTap: onTap,
+        onTap: () {
+          _launchURL(url);
+        },
       ),
     );
+  }
+
+  _launchURL(String urlAddress) async {
+    if (await canLaunch(urlAddress)) {
+      await launch(urlAddress);
+    } else {
+      throw 'Could not launch $urlAddress';
+    }
   }
 }

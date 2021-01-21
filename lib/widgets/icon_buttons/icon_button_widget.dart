@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class IconButtonwidget extends StatelessWidget {
-  final String icon;
+  final String icon, url;
   final Color iconButtonColor, shadowColor, iconColor;
   final Function onTap;
 
-  const IconButtonwidget(
-      {Key key,
-      @required this.icon,
-      @required this.iconButtonColor,
-      @required this.shadowColor,
-      @required this.iconColor,
-      this.onTap})
-      : super(key: key);
+  const IconButtonwidget({
+    Key key,
+    @required this.icon,
+    @required this.iconButtonColor,
+    @required this.shadowColor,
+    @required this.iconColor,
+    this.url,
+    this.onTap,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -44,8 +46,18 @@ class IconButtonwidget extends StatelessWidget {
             ),
           ),
         ),
-        onTap: onTap,
+        onTap: () {
+          _launchURL(url);
+        },
       ),
     );
+  }
+
+  _launchURL(String urlAddress) async {
+    if (await canLaunch(urlAddress)) {
+      await launch(urlAddress);
+    } else {
+      throw 'Could not launch $urlAddress';
+    }
   }
 }

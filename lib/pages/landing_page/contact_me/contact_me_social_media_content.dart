@@ -36,7 +36,7 @@ class SocialMediaContent extends StatelessWidget {
                 iconButtonColor: light1Color,
                 shadowColor: Colors.black,
                 iconColor: dark1Color,
-                onTap: () {},
+                url: yrlpGitHub,
               ),
               SizedBox(width: 20),
               // Dribbble
@@ -45,7 +45,7 @@ class SocialMediaContent extends StatelessWidget {
                 iconButtonColor: light1Color,
                 shadowColor: Colors.black,
                 iconColor: dark1Color,
-                onTap: () {},
+                url: yrlpDribbble,
               ),
               SizedBox(width: 20),
               // LinkedIn
@@ -54,7 +54,7 @@ class SocialMediaContent extends StatelessWidget {
                 iconButtonColor: light1Color,
                 shadowColor: Colors.black,
                 iconColor: dark1Color,
-                onTap: () {},
+                url: yrlpLinkedIn,
               ),
               SizedBox(width: 20),
               // Twitter
@@ -63,7 +63,7 @@ class SocialMediaContent extends StatelessWidget {
                 iconButtonColor: light1Color,
                 shadowColor: Colors.black,
                 iconColor: dark1Color,
-                onTap: () {},
+                url: yrlpTwitter,
               ),
               SizedBox(width: 20),
               // Instagram
@@ -72,7 +72,7 @@ class SocialMediaContent extends StatelessWidget {
                 iconButtonColor: light1Color,
                 shadowColor: Colors.black,
                 iconColor: dark1Color,
-                onTap: () {},
+                url: yrlpInstagram,
               ),
             ],
           ),

@@ -18,17 +18,19 @@ class DrawerWidget extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Spacer(),
+          //* Home
           DrawerItems(
             title: home,
-            onTap: () {},
           ),
+          //* Blog
           DrawerItems(
             title: blog,
-            onTap: () {},
+            url: virgooYRlp98URL,
           ),
+          //* Contact me
           DrawerItems(
             title: contactMe,
-            onTap: () {},
+            url: mailToYousef,
           ),
           Spacer(),
         ],

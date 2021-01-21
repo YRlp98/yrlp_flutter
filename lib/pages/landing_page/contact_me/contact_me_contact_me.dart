@@ -4,7 +4,7 @@ import '../../../theme/colors.dart';
 import '../../../theme/icons.dart';
 import '../../../theme/strings.dart';
 import '../../../theme/text_style.dart';
-import '../../../widgets/tile/tile_widget.dart';
+import '../../../widgets/tile/tile_widget_mobile.dart';
 
 class ContactMeContent extends StatelessWidget {
   const ContactMeContent({
@@ -22,39 +22,39 @@ class ContactMeContent extends StatelessWidget {
             quarterTurns: -1,
             child: SelectableText(
               contactMeBold,
-              style: heading2BoldLightEnStyle,
+              style: heading3BoldLightEnStyle,
             ),
           ),
-          SizedBox(width: 30),
+          SizedBox(width: 20),
           //* Tile
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               // Email
-              TileWidget(
+              TileWidgetMobile(
                 icon: emailIcon,
                 iconColor: light1Color,
                 title: email,
                 subTitle: yousefEmail,
-                onTap: () {},
+                url: mailToYousef,
               ),
               SizedBox(height: 30),
               // Skype
-              TileWidget(
+              TileWidgetMobile(
                 icon: skypeIcon,
                 iconColor: light1Color,
                 title: skype,
                 subTitle: yousefSkype,
-                onTap: () {},
+                url: yrlpSkype,
               ),
               SizedBox(height: 30),
               // Discord
-              TileWidget(
+              TileWidgetMobile(
                 icon: discordIcon,
                 iconColor: light1Color,
                 title: discord,
                 subTitle: yousefDiscord,
-                onTap: () {},
+                url: yrlpDiscord,
               ),
             ],
           ),

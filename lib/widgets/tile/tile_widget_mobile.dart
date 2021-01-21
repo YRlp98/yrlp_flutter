@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../theme/text_style.dart';
 
-class TileWidget extends StatelessWidget {
-  final String icon, title, subTitle;
+class TileWidgetMobile extends StatelessWidget {
+  final String icon, title, subTitle, url;
   final Color iconColor;
   final Function onTap;
 
-  const TileWidget({
+  const TileWidgetMobile({
     Key key,
     @required this.icon,
     @required this.title,
     @required this.subTitle,
     @required this.iconColor,
+    this.url,
     this.onTap,
   }) : super(key: key);
 
@@ -27,8 +29,8 @@ class TileWidget extends StatelessWidget {
           children: <Widget>[
             //* Icon
             Container(
-              width: 55,
-              height: 55,
+              width: 45,
+              height: 45,
               child: SvgPicture.asset(
                 icon,
                 color: iconColor,
@@ -46,14 +48,24 @@ class TileWidget extends StatelessWidget {
                 //* Subtitle
                 SelectableText(
                   subTitle,
-                  style: leadParagraphRegularLightEnStyle,
+                  style: miniParagraphRegularLightEnStyle,
                 ),
               ],
             )
           ],
         ),
-        onTap: onTap,
+        onTap: () {
+          _launchURL(url);
+        },
       ),
     );
+  }
+
+  _launchURL(String urlAddress) async {
+    if (await canLaunch(urlAddress)) {
+      await launch(urlAddress);
+    } else {
+      throw 'Could not launch $urlAddress';
+    }
   }
 }
